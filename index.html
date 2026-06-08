@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Credit Scoring Model</title>
+</head>
+
+<body>
+
+<h1>Credit Scoring Prediction</h1>
+
+<form action="/predict" method="post">
+
+<input type="text" name="income"
+placeholder="Income" required>
+
+<br><br>
+
+<input type="text" name="debt"
+placeholder="Debt" required>
+
+<br><br>
+
+<input type="text" name="age"
+placeholder="Age" required>
+
+<br><br>
+
+<input type="submit"
+value="Predict">
+
+</form>
+
+<h2>{{ prediction_text }}</h2>
+
+</body>
+
+</html>
